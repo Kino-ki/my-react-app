@@ -9,7 +9,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "linebreaak-style":0,
+        "linebreaak-style": 0,
         "indent":0
     }
 }
