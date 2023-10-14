@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './PokemonCard.module.css';
 
 const PokemonCard = (props) => {
@@ -14,5 +15,11 @@ const PokemonCard = (props) => {
         <figcaption className={styles.text}>{props.pokemon.name.toUpperCase()}</figcaption>
     </figure>
   );
+}
+PokemonCard.propTypes = {
+  pokemon: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired,
+  }) 
 }
 export default PokemonCard;
