@@ -33,7 +33,7 @@ function app (){
   const [pokemonIndex, setpokemonIndex ]=useState(0);
   return(
     <>
-        <NavBar pokemonIndex={pokemonIndex} setpokemonIndex={setpokemonIndex} pokemonList={pokemonList}/>
+        <NavBar pokemonList={pokemonList}/>
         <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
     </>
 
