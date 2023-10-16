@@ -1,6 +1,8 @@
-import { useState } from "react";
+import PropTypes from "prop-types";
 
-const NavBar = ({setpokemonIndex,pokemonList}) => {
+
+function NavBar ({pokemonIndex,setpokemonIndex,pokemonList}) {
+  // const pickPrevious = () => setpokemonIndex(pokemonIndex - 1)
     return (
         <>
         {pokemonIndex>0?(
