@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './PokemonCard.module.css';
 
-const PokemonCard = (props) => {
-  console.log(props);
-
+function PokemonCard (props) {
   return (
     <figure className={styles.container}>
       {props.pokemon.imgSrc !== undefined ? (
